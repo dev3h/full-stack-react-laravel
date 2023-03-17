@@ -25,3 +25,29 @@ npm create vite
 
 -   You can be delete **App.css**, clear all code css in **index.css**, delete `react.svg` in `src/assets`
 
+## 2: Setup Construct folder
+
+```
+src
+├── views
+├── components
+```
+
+---
+
+## 3: React router dom
+
+-   remember you stand in react folder to install
+
+```bash
+npm i react-router-dom
+```
+
+### 3.1: Setup router
+
+-   [tutorial](https://reactrouter.com/en/main/start/tutorial)
+-   create file `src/router.jsx` with use **createBrowserRouter**
+-   Then we use it in `main.jsx` with _RouteProvider_ and pass `router` to it
+-   Note:
+    -   route `*` is a default route
+    - `<Outlet />` should be used in parent route elements to render their child route element
