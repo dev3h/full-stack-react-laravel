@@ -57,3 +57,4 @@ npm i react-router-dom
 
 ## 4: Setup Context
 - create ContextProvider in `src/contexts/ContextProvider.jsx`
+- then you need to wrap `ContextProvider` in `main.jsx` with `RouteProvider`
