@@ -31,6 +31,7 @@ npm create vite
 src
 ├── views
 ├── components
+|-- contexts
 ```
 
 ---
@@ -50,4 +51,9 @@ npm i react-router-dom
 -   Then we use it in `main.jsx` with _RouteProvider_ and pass `router` to it
 -   Note:
     -   route `*` is a default route
-    - `<Outlet />` should be used in parent route elements to render their child route element
+    -   `<Outlet />` should be used in parent route elements to render their child route element
+
+---
+
+## 4: Setup Context
+- create ContextProvider in `src/contexts/ContextProvider.jsx`
