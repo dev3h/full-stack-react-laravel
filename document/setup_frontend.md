@@ -56,5 +56,28 @@ npm i react-router-dom
 ---
 
 ## 4: Setup Context
-- create ContextProvider in `src/contexts/ContextProvider.jsx`
-- then you need to wrap `ContextProvider` in `main.jsx` with `RouteProvider`
+
+-   create ContextProvider in `src/contexts/ContextProvider.jsx`
+-   then you need to wrap `ContextProvider` in `main.jsx` with `RouteProvider`
+
+---
+
+## 5: Install Axios to call Api
+
+-   [axios doc](https://axios-http.com/docs/intro)
+
+```bash
+npm install axios
+```
+
+### 5.1: Setup axios
+
+-   create file `src/axios-client.js` with config axios
+
+#### env
+
+-   use env variable in vite: [vite env](https://vitejs.dev/guide/env-and-mode.html)
+-   create file `react/.env.example` to example config url api.
+-   create file `react/.env` to config url api. This is a main setup env. When you want update env, you need update in `.env` not `.env.example`, `.env.example` is a example for other developer to know what env you need to config in `.env`. `env` is ignored by git
+#### interceptor axios
+- intercept requests or responses before they are handled by then or catch
